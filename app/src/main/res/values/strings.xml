@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GithubApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="removed_item">Removed %1$s</string>
+    <string name="undo_remove">%1$s is back in the list</string>
+    <string name="undo_link">Undo</string>
+</resources>

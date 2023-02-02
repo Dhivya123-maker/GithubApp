@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    tools:context=".MainActivity">
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/progressBar"
+        style="@style/SpinKitView.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:focusableInTouchMode="true"
+        android:indeterminate="true"
+        android:elevation="5dp"
+        android:visibility="gone"
+        app:SpinKit_Color="@color/purple_200" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/item_list"
+        android:paddingBottom="65dp"
+       />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/add_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="20dp"
+        android:text="Track your favourite repo with a Add Now Button."
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:visibility="gone"
+        android:fontFamily="@font/nunito_semibold"
+        android:layout_centerInParent="true"
+        android:textColor="@color/purple_200"
+        android:paddingBottom="65dp"
+        />
+    <Button
+        android:id="@+id/view_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="20dp"
+        android:text="Tap to view newly added repositories"
+        android:textAlignment="center"
+        android:background="@drawable/white_bg"
+        android:textSize="15dp"
+        android:textAllCaps="false"
+        android:letterSpacing="0.01"
+        android:fontFamily="@font/nunito_semibold"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        />
+
+
+</RelativeLayout>
